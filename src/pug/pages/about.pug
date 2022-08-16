@@ -1,0 +1,84 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'MetaHedonists'
+		};
+
+block main
+	.about
+		.about__sec1
+			.about__container.container 
+				h1.about__title 
+					span About us 
+				h2.about__subtitle.subtitle
+					|Our mission:
+				.about__text
+					|We, hedonism ambassadors,  want to unite hedonists all around the world into exclusive community, where everyone will feel themselves at home. 
+				.about__row 
+					.about__image.rightimg
+						img(src="images/about/1.svg", alt="alt")
+						img(src="images/about/11.svg", alt="alt")
+					.about__body 
+						.about__subtitle2.subtitle 
+							|Our values:
+						ul.about__list 
+							li.about__item 
+								|Transparency (we are open for communication and collaboration)
+							li.about__item 
+								|Fair Play (we fairly mange our project and blockchain guarantees it)
+							li.about__item.about-item-desktop
+								|Open-minded (It doesn’t matter who you are or where you’re from, if you share our passions)
+							li.about__item.about-item-desktop
+								|Privilege (we provide our community with exclusive perks) 
+							li.about__item.about-item-desktop
+								|Hedonism (we are here to enjoy life together)
+				ul.about__list-mobile 
+					li.about__item.about-item-mobile
+						|Open-minded (It doesn’t matter who you are or where you’re from, if you share our passions)
+					li.about__item.about-item-mobile
+						|Privilege (we provide our community with exclusive perks) 
+					li.about__item.about-item-mobile
+						|Hedonism (we are here to enjoy life together)
+		.sec7.wall#Wall
+			.sec7__container.wall__container
+				.sec7__btn.wall__title
+					span  
+						|Wall of honor
+		.sec8.mans
+			.sec8__container.mans__container.container 
+				.sec8__items.mans__items
+					.sec8__item.mans__item.item3
+						.item3__column 
+							.item3__image 
+								img(src="images/8sec/11.svg", alt="alt")
+							.item3__name Ben
+							.item3__title web and blockchain developer
+							.item3__subtitle 3 main passions:
+							ul.item3__list 
+								li.item3__point · button phones
+								li.item3__point · scripts
+								li.item3__point · cars
+					.sec8__item.mans__item.item3
+						.item3__column 
+							.item3__image 
+								img(src="images/8sec/22.svg", alt="alt")
+							.item3__name Paulina
+							.item3__title artist and design
+							.item3__subtitle 3 main passions:
+							ul.item3__list 
+								li.item3__point · seafood
+								li.item3__point · sport
+								li.item3__point · cars
+					.sec8__item.mans__item.item3
+						.item3__column 
+							.item3__image 
+								img(src="images/8sec/33.svg", alt="alt")
+							.item3__name Rex
+							.item3__title marketing and management
+							.item3__subtitle 3 main passions:
+							ul.item3__list 
+								li.item3__point · girls
+								li.item3__point · trips
+								li.item3__point · wine

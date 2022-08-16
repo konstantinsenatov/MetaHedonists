@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Enter</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			border: 0;
+			box-sizing: border-box;
+		}
+		*,*:before,*:after{
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		:focus,a:active{outline: none;}
+		a:focus,a:active{outline: none;}
+		a{color:inherit}
+		nav,footer,header,aside{display: block;}
+		
+		html,body{
+			height: 100%;
+			width:100%;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 14px;
+			-ms-text-size-adjust: 100%;
+			-moz-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+		input,button,textarea{font-family: inherit;}
+		
+		input::-ms-clear{display: none;}
+		button {
+			padding: 0;
+			border: none;
+			font: inherit;
+			color: inherit;
+			background-color: transparent;
+			cursor: pointer;}
+		button::-moz-focus-inner {padding: 0;border: 0;}
+		a, a:visited{text-decoration: none;}
+		a:hover{text-decoration: none;}
+		ul li{list-style: none;}
+		img{vertical-align: top;}
+		h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+		body {
+			height: 100vh;
+			width: 100vw;
+		}
+/* ------------------------------------------- */
+		.enter {
+			overflow: hidden;
+			height: 100%;
+			width: 100%;
+			background-color: #000000;
+		}
+		.enter__container {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.container {
+			max-width: 1292px;
+			margin: 0 auto;
+		}
+		@media(max-width: 1024px){
+			.container {
+				max-width: 1024px;
+			}
+		}
+		.enter__image {
+			position: relative;
+			height: 100%;
+			width: 100%;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.enter__image1 {
+			display: none;
+		}
+		@media (min-width: 1025px){
+			.enter__image1 {
+				display: block;
+			}
+		}
+		.enter__image2 {
+			display: none;
+		}
+		@media (min-width: 769px) and (max-width: 1024px){
+			.enter__image2 {
+				display: block;
+			}
+		}
+		.enter__image3 {
+			display: none;
+		}
+		@media (min-width: 461px) and (max-width: 768px){
+			.enter__image3 {
+				display: block;
+			}
+		}
+		.enter__image4 {
+			display: none;
+		}
+		@media (max-width: 460px){
+			.enter__image4 {
+				display: block;
+			}
+		}
+
+		.enter__btn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding-right: 60px;
+			padding-left: 60px;
+			padding-top: 60px;
+			padding-bottom: 30px;
+			font-family: 'Quantico';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 46px;
+			text-align: center;
+			color: #FFFFFF;
+		}
+		@media (max-width: 768px){
+			.enter__btn {
+				font-size: 28px;
+			}
+		}
+		@media (max-width: 460px){
+			.enter__btn {
+				font-size: 14px;
+				padding-top: 45px;
+			}
+		}
+/* ---------------------------------------------- */
+		
+	</style>
+
+</head>
+<body>
+	<div class="enter">
+		<div class="enter__container container">
+			<div class="enter__image enter__image1">
+				<img src="images/enter/1.jpg" alt="">
+			</div>
+			<div class="enter__image enter__image2">
+				<img src="images/enter/2.jpg" alt="">
+			</div>
+			<div class="enter__image enter__image3">
+				<img src="images/enter/3.jpg" alt="">
+			</div>
+			<div class="enter__image enter__image4">
+				<img src="images/enter/4.jpg" alt="">
+			</div>
+			<button class="enter__btn">
+				Enter
+			</button>
+		</div>
+	</div>
+</body>
+</html>
